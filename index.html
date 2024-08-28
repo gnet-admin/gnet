@@ -3,55 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Website</title>
+    <title>gnet - Skreddersydde nettsteder som imponerer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Company Logo" class="logo">
-        </div>
         <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">
+                <img src="images/icon.png" alt="Your Business Logo">
+                <img src="images/logo.png" alt="Your Business Logo">
+            </div>
+            <ul>
+                <li><a href="#home">Hjem</a></li>
+                <li><a href="#services">Tjenester</a></li>
+                <li><a href="#portfolio">Portefølje</a></li>
+                <li><a href="#testimonials">Attester</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero-section">
-        <h1>Welcome to Our Professional Website</h1>
-        <p>We provide top-notch services to meet your needs.</p>
-        <a href="#services" class="cta-button">Our Services</a>
+    <section id="home">
+        <div class="hero">
+            <h1>Skreddersydde nettsteder som imponerer</h1>
+            <p>Vi lager fantastiske nettsider som hjelper bedriften din å vokse.</p>
+            <a href="#services" class="cta-btn">Utforsk tjenester</a>
+        </div>
     </section>
 
-    <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>We are a company committed to excellence and customer satisfaction. Our team is dedicated to providing the best possible solutions to our clients.</p>
-    </section>
+    <img src="images/19.png">
 
-    <section id="services" class="services-section">
+    <section id="services">
         <h2>Our Services</h2>
         <div class="service-container">
             <div class="service-box">
-                <h3>Service 1</h3>
-                <p>Detailed description of service 1.</p>
+                <h3>Custom Website Design</h3>
+                <p>Get a website that’s tailored specifically for your business needs.</p>
             </div>
             <div class="service-box">
-                <h3>Service 2</h3>
-                <p>Detailed description of service 2.</p>
+                <h3>Responsive Design</h3>
+                <p>Our websites look great on any device, from desktop to mobile.</p>
             </div>
             <div class="service-box">
-                <h3>Service 3</h3>
-                <p>Detailed description of service 3.</p>
+                <h3>SEO Optimization</h3>
+                <p>Increase your visibility on search engines and attract more clients.</p>
             </div>
         </div>
     </section>
 
+    <img src="images/20.png">
+
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-container">
+            <!-- Add your portfolio images here -->
+            <div class="portfolio-item">
+                <img src="portfolio1.jpg" alt="Portfolio Item 1">
+                <p>Project 1</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio2.jpg" alt="Portfolio Item 2">
+                <p>Project 2</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio3.jpg" alt="Portfolio Item 3">
+                <p>Project 3</p>
+            </div>
+        </div>
+    </section>
+
+    <img src="images/21.png">
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <p>"Fantastic service, they built exactly what I wanted!"</p>
+                <h4>- Client Name</h4>
+            </div>
+            <div class="testimonial-box">
+                <p>"The team was professional and delivered on time. Highly recommended!"</p>
+                <h4>- Client Name</h4>
+            </div>
+            <div class="testimonial-box">
+                <p>"Our new website has significantly increased our business!"</p>
+                <h4>- Client Name</h4>
+            </div>
+        </div>
+    </section>
+
+    <img src="images/22.png">
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <img src="images/23.png">
+
     <footer>
-        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Your Business Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
