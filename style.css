@@ -921,3 +921,13 @@ section {
     color: var(--gray-800);
 }
 
+@media (max-width: 768px) {
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-content {
+        order: -1; /* move text section to top */
+    }
+}
+
