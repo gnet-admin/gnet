@@ -2,328 +2,433 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gnet.no - Førsteklasses webutvikling</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNET - Skreddersydde nettsteder</title>
+    <meta name="description"
+        content="Professional freelance web developer creating modern, responsive websites with clean code and premium design.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/tab_icon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">gnet.no</div>
-      <ul class="nav-menu">
-        <li><a href="#services">Tjenester</a></li>
-        <li><a href="#portfolio">Portefølje</a></li>
-        <li><a href="#about">Om meg</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
-      <div class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <h1 class="hero-title">Skreddersydde nettsteder<br>som imponerer.</h1>
-      <p class="hero-subtitle">Skreddersydd webutvikling som bringer visjonen din til liv med moderne design og sømløs
-        funksjonalitet.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn-primary">Start prosjektet ditt</a>
-        <a href="#portfolio" class="btn-secondary">Se portefølje</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <div class="mockup-container">
-        <div class="laptop-mockup">
-          <div class="laptop-screen">
-            <div class="mockup-website">
-              <div class="mockup-header"></div>
-              <div class="mockup-content">
-                <div class="mockup-section"></div>
-                <div class="mockup-section"></div>
-                <div class="mockup-section"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
+    <!-- Navigation -->
+    <nav class="nav">
     <div class="container">
-      <h2 class="section-title">Hva jeg tilbyr</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🌐</div>
-          <h3>Bedriftsnettsteder</h3>
-          <p>Profesjonelle nettsteder som etablerer din online tilstedeværelse og driver vekst.</p>
-          <div class="service-features">
-            <span>Responsiv Design</span>
-            <span>SEO Optimalisert</span>
-            <span>Rask Lasting</span>
-          </div>
+        <div class="nav-brand">
+            <a href="#home">
+                <img src="images/nav_logo_1.png" alt="GNET Logo" class="logo">
+            </a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🛒</div>
-          <h3>E-handelsbutikker</h3>
-          <p>Komplette nettbutikker med sikker betalingsbehandling og varelagerstyring.</p>
-          <div class="service-features">
-            <span>Sikre Betalinger</span>
-            <span>Varelager System</span>
-            <span>Mobilvennlig</span>
-          </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Fremside</a></li>
+            <li><a href="#about" class="nav-link">Om meg</a></li>
+            <li><a href="#portfolio" class="nav-link">Tjenester jeg tilbyr</a></li>
+            <li><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <div class="service-card">
-          <div class="service-icon">📱</div>
-          <h3>Webapplikasjoner</h3>
-          <p>Skreddersydde webapplikasjoner tilpasset dine spesifikke forretningsbehov og arbeidsflyter.</p>
-          <div class="service-features">
-            <span>Tilpassede Funksjoner</span>
-            <span>Brukeradministrasjon</span>
-            <span>API Integrasjon</span>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</nav>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <h2 class="section-title">Min Portefølje</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <div class="portfolio-image">
-            <img src="bryllupsnettside.jpg" alt="Tech Startup Website" loading="lazy">
-            <div class="portfolio-overlay">
-              <h4>Bryllupsnettside</h4>
-              <p>Moderne landingsside</p>
-              <span class="portfolio-tech">VSCode • JavaScript • GitHub</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">
-            <img src="motemerke.jpg" alt="E-commerce Store" loading="lazy">
-            <div class="portfolio-overlay">
-              <h4>Motemerke</h4>
-              <p>Nettbutikk & varelager</p>
-              <span class="portfolio-tech">HTML • CSS • JavaScript</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">
-            <img src="markedsforingsbyra.jpg" alt="Agency Website" loading="lazy">
-            <div class="portfolio-overlay">
-              <h4>Teknologigründerbedrift</h4>
-              <p>Bedriftsnettsted & CMS</p>
-              <span class="portfolio-tech">WordPress • Elementor • Database</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>Digitale opplevelser som betyr noe</h2>
-          <p class="about-description">
-            Med mange års erfaring innen webutvikling, spesialiserer jeg meg på å lage
-            nettsteder som ikke bare ser fantastiske ut, men også presterer. Hvert prosjekt
-            bygges med fokus på detaljer, moderne teknologier og dine mål.
-          </p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">30+</span>
-              <span class="stat-label">Fullførte Prosjekter</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="scrolling-text scrolling-text-1">
+                <div class="scroll-content" id="scroll-content-1"></div>
             </div>
-            <div class="stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Kundetilfredshet</span>
+            <div class="scrolling-text scrolling-text-2">
+                <div class="scroll-content" id="scroll-content-2"></div>
             </div>
-            <div class="stat">
-              <span class="stat-number">24/7</span>
-              <span class="stat-label">Support</span>
+            <div class="scrolling-text scrolling-text-3">
+                <div class="scroll-content" id="scroll-content-3"></div>
             </div>
-          </div>
-          <div class="tech-stack">
-            <h3>Teknologier jeg bruker</h3>
-            <div class="tech-icons">
-              <span class="tech-item">React</span>
-              <span class="tech-item">Next.js</span>
-              <span class="tech-item">Vue.js</span>
-              <span class="tech-item">Node.js</span>
-              <span class="tech-item">Python</span>
-              <span class="tech-item">WordPress</span>
-              <span class="tech-item">Shopify</span>
-              <span class="tech-item">MongoDB</span>
-              <span class="tech-item">TypeScript</span>
-              <span class="tech-item">JavaScript</span>
-              <span class="tech-item">Docker</span>
-              <span class="tech-item">Kubernetes</span>
-              <span class="tech-item">PostgreSQL</span>
-              <span class="tech-item">MySQL</span>
-              <span class="tech-item">Firebase</span>
-              <span class="tech-item">C++</span>
-              <span class="tech-item">C#</span>
-              <span class="tech-item">Java</span>
-              <span class="tech-item">FastAPI</span>
-              <span class="tech-item">REST APIs</span>
-              <span class="tech-item">Git</span>
-              <span class="tech-item">CI/CD</span>
-              <span class="tech-item">MATLAB</span>
-              <span class="tech-item">PyTorch</span>
+            <div class="scrolling-text scrolling-text-4">
+                <div class="scroll-content" id="scroll-content-4"></div>
             </div>
-          </div>
+            <div class="scrolling-text scrolling-text-5">
+                <div class="scroll-content" id="scroll-content-5"></div>
+            </div>
+            <div class="scrolling-text scrolling-text-6">
+                <div class="scroll-content" id="scroll-content-6"></div>
+            </div>
+            <div class="scrolling-text scrolling-text-7">
+                <div class="scroll-content" id="scroll-content-7"></div>
+            </div>
+            <div class="scrolling-text scrolling-text-8">
+                <div class="scroll-content" id="scroll-content-8"></div>
+            </div>
+            <div class="scrolling-text scrolling-text-9">
+                <div class="scroll-content" id="scroll-content-9"></div>
+            </div>
+            <div class="scrolling-text scrolling-text-10">
+                <div class="scroll-content" id="scroll-content-10"></div>
+            </div>
         </div>
-        <div class="about-image">
-          <div class="profile-card">
-            <img src="bilde.jpg" alt="Profile" class="profile-image">
-            <div class="profile-info">
-              <h3>Gard Indrekvam</h3>
-              <p>Dataingeniør & Sivilingeniørstudent</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/gard-indrekvam/" class="profile-link" target="_blank"
-                  rel="noopener noreferrer">LinkedIn</a>
-              </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title"><span class="">100</span> grunner til å velge GNET</h1>
+                <p class="hero-subtitle">Skreddersydde nettstider som imponerer</p>
+                <a href="#contact" class="cta-button">Kom i gang</a>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">La oss starte samarbeidet</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3>Er du klar til å starte prosjektet ditt?</h3>
-          <p>Ta kontakt, så diskuterer vi hvordan jeg kan hjelpe deg med å realisere visjonen din.</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <span class="contact-icon">📧</span>
-              <div>
-                <strong>E-post</strong>
-                <p>gard.indrekvam@icloud.com</p>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/bilde2.jpg" alt="Profile Image" class="profile-image">
+                    <p class="profile-caption">
+                        <span class="profile-name">Gard Indrekvam</span> <span class="profile-age">(24)</span><br>
+                        Dataingeniør & Sivilingeniørstudent i anvendt datateknologi
+                    </p>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Om meg</h2>
+                    <p class="about-text">
+                        Helt siden oppveksten har jeg vært veldig interessert og nysgjerrig på alt som
+                        har med teknologi å gjøre. Det var derfor et naturlig valg for meg å satse på dette
+                        fagfeltet da jeg skulle velge utdanning. I løpet av de siste årene har jeg utdannet
+                        meg til dataingeniør og har nå begynt på en master i anvendt datateknologi.
+                    </p>
+                    <p class="about-text">
+                        Ved siden av studiene har jeg startet <img src="images/nav_logo_1.png" alt="GNET.no logo" class="inline-logo">
+                        som et frilansprosjekt for å hjelpe
+                        hvem som helst med å realisere idéene sine på nett - enten det er en enkel nettside eller mer komplekse digitale løsninger. Mitt mål er å være en rimelig løsning
+                        for <strong>deg</strong>.
+                    </p>
+                    <p class="about-text">
+                        <img src="images/nav_logo_1.png" alt="GNET.no logo" class="inline-logo">- Skreddersydde nettsteder som imponerer.
+                </div>
             </div>
-            <div class="contact-item">
-              <span class="contact-icon">📱</span>
-              <div>
-                <strong>Telefon</strong>
-                <p>+47 414 87 150</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">⏰</span>
-              <div>
-                <strong>Responsstid</strong>
-                <p>Innen 24 timer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Navn</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-post</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="project">Prosjekttype</label>
-            <select id="project" name="project" required>
-              <option value="">Velg en prosjekttype</option>
-              <option value="business">Bedriftsnettsted</option>
-              <option value="ecommerce">Nettbutikk</option>
-              <option value="webapp">Webapplikasjon</option>
-              <option value="redesign">Nettsteds redesign</option>
-              <option value="maintenance">Vedlikehold og oppdateringer</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="budget">Budsjettområde</label>
-            <select id="budget" name="budget" required>
-              <option value="">Velg budsjettområde</option>
-              <option value="under-5k">Under 5 000 kr</option>
-              <option value="5k-10k">5 000 - 10 000 kr</option>
-              <option value="10k-25k">10 000 - 25 000 kr</option>
-              <option value="25k-plus">25 000 kr+</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Prosjekt Detaljer</label>
-            <textarea id="message" name="message" rows="4" placeholder="Fortell meg om prosjektet ditt..."
-              required></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Send Melding</button>
-        </form>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>gnet.no</h3>
-          <p>Bygger eksepsjonelle digitale opplevelser</p>
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h3 class="timeline-title">De siste årene</h3>
+                <p class="timeline-intro">Viktige milepæler i min utdanning og karriere.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor</h3>
+                            <h4>Dataingeniør, HVL</h4>
+                            <span class="timeline-date">2021</span>
+                            <p>Studiet ga meg solid kompetanse i programmering, systemutvikling og
+                                moderne teknologier, samt erfaring med samarbeid i tverrfaglige prosjekter.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Utveksling</h3>
+                            <h4>Queensland University of Technology</h4>
+                            <span class="timeline-date">2023</span>
+                            <p>Studerte fag innen robotikk, dataanalyse, spilldesign og elektromagnetisme
+                                for å styrke teknisk kompetanse og tverrfaglig forståelse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Bacheloroppgave</h3>
+                            <h4>CanEat</h4>
+                            <span class="timeline-date">2024</span>
+                            <p>Utviklet et AI-basert løsning for forbedret matvaregjenkjenning i appen CanEat,
+                                med fokus på presisjon og brukervennlighet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Master</h3>
+                            <h4>Anvendt datateknologi og ingeniørvitenskap | sivilingeniør, HVL</h4>
+                            <span class="timeline-date">2024</span>
+                            <p>Startet direkte på master etter fullført bachelor, med vekt på programmering,
+                                robotikk og IoT.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Utplassering</h3>
+                            <h4>BKK</h4>
+                            <span class="timeline-date">2025</span>
+                            <p>Praktisk erfaring i Utvikling og Analyse-teamet hos BKK, med særlig fokus på 
+                                Microsoft Power Platform.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Frilans</h3>
+                            <h4>GNET.no</h4>
+                            <span class="timeline-date">- nå</span>
+                            <p>Ved siden av masterstudiene utvikler jeg skreddersydde og responsive nettsteder med vekt på brukervennlighet 
+                                og moderne design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4>Tjenester</h4>
-            <ul>
-              <li><a href="#services">Webutvikling</a></li>
-              <li><a href="#services">E-handel</a></li>
-              <li><a href="#services">Webapplikasjoner</a></li>
-              <li><a href="#services">Vedlikehold</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Bedrift</h4>
-            <ul>
-              <li><a href="#about">Om oss</a></li>
-              <li><a href="#portfolio">Portefølje</a></li>
-              <li><a href="#contact">Kontakt</a></li>
-              <li><a href="#">Blogg</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Kontakt</h4>
-            <ul>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 gnet.no. Alle rettigheter reservert.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Tjenester jeg tilbyr -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Tjenester jeg tilbyr</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/bedriftsprofil.jpg" alt="Bedriftsprofil">
+                        <div class="portfolio-placeholder">Bedriftsprofil</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Bedriftsprofil</h3>
+                        <p>Profesjonell nettside for små bedrifter med tjenester, referanser og kontaktskjema.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Webdesign</span>
+                            <span class="tag">Responsiv</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/hobbyblogg.jpg" alt="Hobbyblogg">
+                        <div class="portfolio-placeholder">Hobbyblogg</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Hobbyblogg</h3>
+                        <p>Personlig nettside eller blogg for å dele hobbyprosjekter, bilder og historier.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Blogg</span>
+                            <span class="tag">WordPress</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/privatnettbutikk.jpg" alt="Privat nettbutikk">
+                        <div class="portfolio-placeholder">Privat nettbutikk</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Privat nettbutikk</h3>
+                        <p>Design og oppsett av nettside eller trykksaker for små butikker.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Webdesign</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Print</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/bryllup.jpg" alt="Bryllup">
+                        <div class="portfolio-placeholder">Bryllup</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Bryllup</h3>
+                        <p>Elegant design av invitasjoner, menyer og bryllupsprogram.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Grafisk design</span>
+                            <span class="tag">Håndverk</span>
+                            <span class="tag">Event</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/fest.jpg" alt="30/40/50/60-års fest">
+                        <div class="portfolio-placeholder">30/40/50/60-års fest</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>30/40/50/60-års fest</h3>
+                        <p>Kreative løsninger til jubileumsfester, fra invitasjoner til plakater.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Jubileum</span>
+                            <span class="tag">Dekor</span>
+                            <span class="tag">Layout</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/utdrikningslag.jpg" alt="Utdrikningslag">
+                        <div class="portfolio-placeholder">Utdrikningslag</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Utdrikningslag</h3>
+                        <p>Spesialdesign av invitasjoner og program til utdrikningslag.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Event</span>
+                            <span class="tag">Moro</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/vennefest.jpg" alt="Vennefest">
+                        <div class="portfolio-placeholder">Vennefest</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Vennefest</h3>
+                        <p>Morsomt og fargerikt design til vennefester og temafester.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Tema</span>
+                            <span class="tag">Invitasjoner</span>
+                            <span class="tag">Dekor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/daap.jpg" alt="Dåp">
+                        <div class="portfolio-placeholder">Dåp</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Dåp</h3>
+                        <p>Design av invitasjoner, bordkort og dekorasjoner til dåp.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Print</span>
+                            <span class="tag">Event</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tjenester/konfirmasjon.jpg" alt="Konfirmasjon">
+                        <div class="portfolio-placeholder">Konfirmasjon</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Konfirmasjon</h3>
+                        <p>Personlig tilpasset grafisk profil for konfirmasjonsfeiringer.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Invitasjoner</span>
+                            <span class="tag">Dekor</span>
+                            <span class="tag">Layout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-idea portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder" style="color: #014122;">Din idé her?</div>
+                    <img src="images/tjenester/ide.jpg" alt="Din idé her?">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Har du en idé?</h3>
+                    <p>Jeg kan designe og utvikle akkurat det du drømmer om – ta kontakt og fortell meg hva du har i
+                        tankene!</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Skreddersydd</span>
+                        <span class="tag">Design</span>
+                        <span class="tag">Utvikling</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-item">
+                    <div class="icon">⏰</div>
+                    <h3>Responstid - innen 24 timer</h3>
+                    <p>Rask kommunikasjon og hurtig prosjektgjennomføring</p>
+                </div>
+                <div class="why-choose-item">
+                    <div class="icon">🛠️</div>
+                    <h3>Døgnåpen kundestøtte</h3>
+                    <p>Alltid tilgjengelig for å hjelpe med spørsmål eller problemer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ta Kontakt</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>La oss samarbeide!</h3>
+                    <p>Er du klar til å starte ditt neste prosjekt? Send meg en melding, så diskuterer vi hvordan jeg
+                        kan hjelpe deg med å realisere visjonen din.</p>
+                        <p>Fyll ut skjemaet til høyre, eller ta kontakt via e-post eller telefon nedenfor!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>📧 <a href="mailto:kontakt@gnet.no">kontakt@gnet.no</a></strong>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📱 +47 414 87 150</strong>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/gard-indrekvam/" class="social-link">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong></strong>
+                        </div>
+                        <div class="contact-item">
+                            <strong>⏰ Jeg svarer alltid innen 24 timer!</strong>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Navn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Melding</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Melding</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/bottom_logo.png" alt="GNET Logo" class="footer-logo">
+                    <p>&copy; 2024 GNET. Alle rettigheter forbeholdt.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#home">Fremside</a>
+                    <a href="#about">Om meg</a>
+                    <a href="#portfolio">Tjenester jeg tilbyr</a>
+                    <a href="#contact">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
