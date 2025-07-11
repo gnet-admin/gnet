@@ -401,7 +401,7 @@ section {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
 }
