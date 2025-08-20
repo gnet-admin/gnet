@@ -187,7 +187,7 @@ function initScrollAnimations() {
     // Timeline animation with delay
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.2}s`;
+        item.style.transitionDelay = `${index * 0.1}s`;
     });
 
     // Portfolio items animation with stagger
@@ -258,7 +258,7 @@ function initContactForm() {
         // Show loading state
         const submitButton = contactForm.querySelector('.submit-button');
         const originalText = submitButton.textContent;
-        submitButton.textContent = 'Sending...';
+        submitButton.textContent = 'Sender...';
         submitButton.disabled = true;
 
         // Simulate form submission (replace with actual form handling)
@@ -271,7 +271,7 @@ function initContactForm() {
             submitButton.disabled = false;
 
             // Show success message
-            showNotification('Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
+            showNotification('Meldingen ble sendt! Jeg tar kontakt med deg innen 24 timer.', 'success');
         }, 2000);
     });
 }
@@ -437,3 +437,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+let lastScrollTop = 0;
+const nav = document.querySelector('.nav');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // scrolling down
+        nav.classList.add('hide');
+    } else {
+        // scrolling up
+        nav.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // handle negative scroll
+});
+
+// Also show nav when mouse is near the top (e.g., top 50px)
+document.addEventListener('mousemove', (e) => {
+    if (e.clientY < 50) {
+        nav.classList.remove('hide');
+    }
+});
+
+
+
+
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Stopp standard innsending
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch("https://formspree.io/f/xpwlwpow", {
+        method: "POST",
+        body: data,
+        headers: { "Accept": "application/json" }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.ok) {
+            form.reset();
+            document.getElementById("formMessage").style.display = "block";
+        } else {
+            alert("Noe gikk galt: " + (data.error || "Ukjent feil"));
+        }
+    })
+    .catch(error => {
+        alert("Noe gikk galt. Prøv igjen.");
+        console.error(error);
+    });
+});
+
