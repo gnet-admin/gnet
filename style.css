@@ -931,3 +931,141 @@ section {
     }
 }
 
+.about-text3 {
+    margin-top: 50px;
+}
+
+.nav.hide {
+    transform: translateY(-100%);
+}
+
+/* Hvorfor velge meg ?*/ 
+.why-choose {
+    background: #f9f9f9; /* Lys bakgrunn for kontrast */
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #014122; /* Mørk grønn (tilpass gjerne) */
+}
+
+.why-choose-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.why-choose-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.why-choose-item i {
+    font-size: 2.2rem;
+    color: #014122; /* Match til fargene dine */
+    margin-bottom: 15px;
+}
+
+.why-choose-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #014122; /* Tilpass farge */
+}
+
+.why-choose-item p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--gray-200);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    background-color: var(--white);
+    color: var(--gray-800);
+    appearance: none; /* Fjerner standard pil i mange nettlesere */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 10px 7px;
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 5px var(--primary-green);
+}
+
+
+/* Priser */
+.price {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Padding mellom introduksjonstekst og boksene */
+.section-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Tilleggsinfo styling */
+.pakke-tillegg {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+#pakker .portfolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#pakker .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* sørger for at content fyller høyden i item */
+}
+
+#pakker .portfolio-tags {
+    margin-top: auto; /* skyver tags ned mot bunnen av content */
+}
+
+#pakker .price {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+#pakker .original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#pakker .passer-godt-til {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
