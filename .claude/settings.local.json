@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(Start-Sleep -Seconds 1)",
+      "Bash(python -m http.server 8080 --directory \"C:\\\\Users\\\\gardi\\\\OneDrive\\\\Dokumenter\\\\GitHub\\\\gnet\")",
+      "Bash(Get-Process python *)",
+      "Bash(Stop-Process -Force)",
+      "Bash(Start-Sleep -Milliseconds 500)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)"
+    ]
+  }
+}
